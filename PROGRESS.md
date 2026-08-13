@@ -30,3 +30,6 @@
   "dev"), pane `cd` into a fresh directory, `pane.created` hook fired →
   autonomous rename, exit 0, ~110ms. Real stale workspace `🟩 dev` →
   `🟩 herdr-hub` fixed on the running session, prefix preserved.
+
+- Published: public repo hasuwini77/herdr-follow-cwd (main + v0.1.0 tag),
+  `herdr-plugin` topic set — auto-indexed into the Herdr marketplace.
