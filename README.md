@@ -77,6 +77,16 @@ description = "sync workspace name to cwd"
 The manual action (`--force`) also *adopts* the focused workspace: it renames
 it to the current cwd's derived name even if the existing label was manual.
 
+## Pairs well with
+
+Herdr's native workspace-switching shortcuts — jumping by number is only
+useful when the names mean something:
+
+```toml
+[keys]
+switch_workspace = ["alt+1..9"]
+```
+
 ## Development
 
 ```bash
