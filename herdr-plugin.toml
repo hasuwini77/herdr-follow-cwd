@@ -1,0 +1,35 @@
+id = "hasuwini77.follow-cwd"
+name = "Follow CWD"
+version = "0.1.0"
+min_herdr_version = "0.7.5"
+description = "Keep workspace labels in sync with the directory their panes actually live in"
+platforms = ["linux", "macos"]
+
+[[startup]]
+command = ["sh", "run.sh"]
+
+[[events]]
+on = "pane.agent_status_changed"
+command = ["sh", "run.sh"]
+
+[[events]]
+on = "pane.agent_detected"
+command = ["sh", "run.sh"]
+
+[[events]]
+on = "pane.created"
+command = ["sh", "run.sh"]
+
+[[events]]
+on = "pane.focused"
+command = ["sh", "run.sh"]
+
+[[events]]
+on = "workspace.focused"
+command = ["sh", "run.sh"]
+
+[[actions]]
+id = "sync"
+title = "Sync workspace name to cwd"
+contexts = ["workspace"]
+command = ["sh", "run.sh", "--force"]
