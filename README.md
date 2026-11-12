@@ -12,9 +12,9 @@ moves to a different project, the label follows.
 ```
 before                    after
 ──────                    ─────
-1 dev                     1 ewstt
-2 dev                     2 herdr-hub
-3 🟩 dev                  3 🟩 carmenta-skill
+1 dev                     1 tidepool
+2 dev                     2 lantern-api
+3 🟩 dev                  3 🟩 moss-cli
 ```
 
 ## Install
@@ -32,7 +32,7 @@ For each workspace the plugin looks at the root pane's tracked cwd and derives
 a name:
 
 1. **Git repo root** — inside a repo, the repo directory's name
-   (`~/dev/ewstt/backend` → `ewstt`).
+   (`~/dev/tidepool/backend` → `tidepool`).
 2. **Ceilings** — project-container directories configured by you (plus
    `$HOME`, always). When the enclosing repo root *is* a ceiling — a projects
    folder that happens to be a git repo, a dotfiles-managed home — the first
